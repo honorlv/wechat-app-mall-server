@@ -9,7 +9,7 @@ exports.admin = (req, res, next)=>{ //验证管理员权限
 exports.user = (req, res, next)=>{ //验证用户是否登录
 
     const openid = req.query.openid||req.body.openid
-
+    console.log(req.query)
     User.find((err,data)=>{
         console.log(data)
     })
